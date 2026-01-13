@@ -1,27 +1,9 @@
-require("config.lazy")
+-- Keymapings
 
+-- Neotree
+vim.keymap.set('n','<leader>e','<CMD>Neotree toggle<CR>', {silent = true})
+vim.keymap.set('n','<leader>r','<CMD>Neotree focus<CR>', {silent = true})
 
--- Lua Files
-
-require("config.lazy")
-
--- Visualization Options
-
--- Mapping
-
-require("config.maps")
-
-
-vim.o.list = true
-vim.o.listchars = 'tab:» ,lead:•,trail:•'
-
--- Editor Options
-
-vim.opt.number = true -- Print the line number
-vim.opt.relativenumber = true -- Show the line number relative to the line.
-
--- Keymaps
--- Open filesystem tab (neo-tree). Copied from their repo
 vim.keymap.set('n', '-', function()
     local reveal_file = vim.fn.expand('%:p')
     if (reveal_file == '') then
@@ -43,5 +25,14 @@ vim.keymap.set('n', '-', function()
     })
     end,
     { desc = "Open neo-tree at current file or working directory" }
-);
+)
 
+-- New windows
+vim.keymap.set('n','<leader>o','<CMD>vsplit<CR>') -- New Window on the right (Vertical)
+vim.keymap.set('n','<leader>p','<CMD>split<CR>') -- Split the window
+
+-- Window Navigation
+vim.keymap.set('n','<C-h>','<C-w>h') -- Move to a window in the left
+vim.keymap.set('n','<C-l>','<C-w>l') -- Move to a window in the right
+vim.keymap.set('n','<C-k>','<C-w>k') -- Move to a window above
+vim.keymap.set('n','<C-j>','<C-w>j') -- Move to a window below

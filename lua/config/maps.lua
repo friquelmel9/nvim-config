@@ -4,6 +4,7 @@
 vim.keymap.set('n','<leader>e','<CMD>Neotree toggle<CR>', {silent = true})
 vim.keymap.set('n','<leader>r','<CMD>Neotree focus<CR>', {silent = true})
 
+-- From the Neotree repository
 vim.keymap.set('n', '-', function()
     local reveal_file = vim.fn.expand('%:p')
     if (reveal_file == '') then
@@ -28,7 +29,7 @@ vim.keymap.set('n', '-', function()
 )
 
 -- New windows
-vim.keymap.set('n','<leader>o','<CMD>vsplit<CR>') -- New Window on the right (Vertical)
+vim.keymap.set('n','<leader>o','<CMD>vsplit<CR>') -- Split the window (Vertical)
 vim.keymap.set('n','<leader>p','<CMD>split<CR>') -- Split the window
 
 -- Window Navigation

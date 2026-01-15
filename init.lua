@@ -1,7 +1,7 @@
 -- Init.lua
 
 -- Requires
--- lazy.vim (pluginManagers
+-- lazy.vim (pluginManagers)
 require("config.lazy")
 
 -- Keymapings

@@ -1,36 +1,6 @@
 -- Portable package manager for Neovim that runs everywhere Neovim runs
+-- More information here: https://dev.to/ralphsebastian/masonnvim-the-ultimate-guide-to-managing-your-neovim-tooling-4520
 
 return {
-    "williamboman/mason.nvim",
-    dependencies = {
-        "williamboman/mason-lspconfig.nvim",
-        "WhoIsSethDaniel/mason-tool-installer.nvim",
-    },
-    config = function()
-        require("mason").setup()
-
-        require("mason-lspconfig").setup({
-            automatic_installation = true,
-            ensure_installed = {
-                "cssls",
-                "eslint",
-                "html",
-                "jsonls",
-                "tsserver",
-                "pyright",
-                "tailwindcss",
-            },
-        })
-
-        require("mason-tool-installer").setup({
-            ensure_installed = {
-                "prettier",
-                "stylua", -- lua formatter
-                "isort", -- python formatter
-                "black", -- python formatter
-                "pylint",
-                "eslint_d",
-            },
-        })
-    end,
+		"mason-org/mason.nvim",
 }

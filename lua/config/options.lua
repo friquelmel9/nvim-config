@@ -7,8 +7,9 @@ vim.opt.relativenumber = false -- Print the numbers relative to the current line
 
 -- Write options
 vim.opt.autoindent = true -- Copy indent from current line when starting a newline
-vim.opt.tabstop = 4 -- Tab considered as spaces
-vim.opt.smartindent = true
+vim.opt.tabstop = 4 -- A tab character looks like four spaces
+vim.opt.shiftwidth = 4 -- Number of spaces a tab is for indentation
+vim.opt.expandtab = false -- Tab is equal to tab, not four spaces:
 vim.opt.title = false -- When on, the title of the window will be set to the value of 'titlestring'
 
 -- Whitespace

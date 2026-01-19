@@ -12,4 +12,5 @@ require("config.maps")
 -- Editor options
 require("config.options")
 
-
+-- Configuration options
+require("config.config")

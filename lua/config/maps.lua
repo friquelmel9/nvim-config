@@ -28,6 +28,11 @@ vim.keymap.set('n', '-', function()
     { desc = "Open neo-tree at current file or working directory" }
 )
 
+-- From the Neogit repository
+vim.keymap.set('n','<leader>git','<CMD>Neogit<CR>', {
+	desc = "Open Neogit UI"
+})
+
 -- New windows
 vim.keymap.set('n','<leader>o','<CMD>vsplit<CR>') -- Split the window (Vertical)
 vim.keymap.set('n','<leader>p','<CMD>split<CR>') -- Split the window

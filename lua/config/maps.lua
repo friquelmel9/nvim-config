@@ -37,3 +37,7 @@ vim.keymap.set('n','<C-h>','<C-w>h') -- Move to a window in the left
 vim.keymap.set('n','<C-l>','<C-w>l') -- Move to a window in the right
 vim.keymap.set('n','<C-k>','<C-w>k') -- Move to a window above
 vim.keymap.set('n','<C-j>','<C-w>j') -- Move to a window below
+
+-- For movement as visual using j and k
+vim.keymap.set('n', 'k', "v:count == 0 ? 'gk' : 'k'", { expr = true, silent = true })
+vim.keymap.set('n', 'j', "v:count == 0 ? 'gj' : 'j'", { expr = true, silent = true })

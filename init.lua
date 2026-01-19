@@ -1,11 +1,10 @@
 -- Init.lua
 
 -- Requires
+-- Mason
 
 -- lazy.vim (pluginManagers)
 require("config.lazy")
-
-require("mason").setup()
 
 -- Keymapings
 require("config.maps")

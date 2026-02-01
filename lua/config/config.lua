@@ -1,5 +1,5 @@
 -- Vim configurations
-
+--[[
 vim.diagnostic.config({
 	virtual_text = true,
 	signs = true,
@@ -7,3 +7,4 @@ vim.diagnostic.config({
 	update_in_insert = false,
 	severity_sort = true,
 })
+]]

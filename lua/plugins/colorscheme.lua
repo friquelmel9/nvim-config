@@ -8,7 +8,8 @@ return {
 }
 ]]
 
--- Neomodern.nvim: Purple themne
+-- Neomodern.nvim: Purple theme
+--[[
 return {
   "cdmill/neomodern.nvim",
   lazy = false,
@@ -19,4 +20,18 @@ return {
     })
     require("neomodern").load()
   end,
+}
+]]
+
+-- Bambu theme: Beige
+return{
+	'ribru17/bamboo.nvim',
+	lazy = false,
+	priority = 1000,
+	config = function()
+	require('bamboo').setup {
+		 --optional configuration here
+	}
+	require('bamboo').load()
+	end,
 }

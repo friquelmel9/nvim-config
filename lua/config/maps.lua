@@ -35,8 +35,7 @@ vim.keymap.set('n', '-', function() -- From the Neotree repository
       position = "left",         -- OPTIONAL, this is the default value
       reveal_file = reveal_file, -- path to file or folder to reveal
       reveal_force_cwd = true,   -- change cwd without asking if needed
-    })
-    end,
+    }) end,
     { desc = "Open neo-tree at current file or working directory" }
 )
 
@@ -51,15 +50,17 @@ keymap('n','<C-l>','<C-w>l', {desc = "Move to a window right from current"})
 keymap('n','<C-k>','<C-w>k', {desc = "Move to a window top from current"})
 keymap('n','<C-j>','<C-w>j', {desc = "Move to a window bottom from current"})
 
--- Movement Configurations
-keymap('n', 'k', "v:count == 0 ? 'gk' : 'k'", { desc = "Visual Movement in Normal Mode for k",
-	expr = true, silent = true })
-keymap('n', 'j', "v:count == 0 ? 'gj' : 'j'", { desc = "Visual Movement in Normal Mode for j"
-	expr = true, silent = true})
+-- Quality of Life
+keymap('n','k',"v:count == 0 ? 'gk' : 'k'", { desc = "Visual Movement in Normal Mode for k",
+	expr = true, silent = true
+})
+keymap('n','j',"v:count == 0 ? 'gj' : 'j'", { desc = "Visual Movement in Normal Mode for j",
+	expr = true, silent = true
+})
+keymap('n','G','Gzz', {desc = "Recenter the Cursor when using G",
+	noremap = true
+})
 
-
-
--- Vim diagnostic
 vim.keymap.set('n','<leader>e', vim.diagnostic.open_float, {
 	desc = 'show error floating'
 })

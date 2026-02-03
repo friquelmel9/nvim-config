@@ -50,6 +50,12 @@ keymap('n','<C-l>','<C-w>l', {desc = "Move to a window right from current"})
 keymap('n','<C-k>','<C-w>k', {desc = "Move to a window top from current"})
 keymap('n','<C-j>','<C-w>j', {desc = "Move to a window bottom from current"})
 
+-- Tab Management
+keymap('n','<leader>tn',':tabnew<CR>', {desc = "Create New Tab"})
+keymap('n','<leader>tx',':tabclose<CR>', {desc = "Close Tab"})
+keymap('n','<leader>tl',':tabnext<CR>', {desc = "Next Tab"})
+keymap('n','<leader>th',':tabprev<CR>', {desc = "Prev Tab"})
+
 -- Quality of Life
 keymap('n','k',"v:count == 0 ? 'gk' : 'k'", { desc = "Visual Movement in Normal Mode for k",
 	expr = true, silent = true
@@ -65,3 +71,9 @@ vim.keymap.set('n','<leader>e', vim.diagnostic.open_float, {
 	desc = 'show error floating'
 })
 
+-- Terminal
+
+--[[
+-- Used the next command to leave the terminal mode using escape
+-- :tnoremap <Esc> <C-\><C-n> 
+--]]

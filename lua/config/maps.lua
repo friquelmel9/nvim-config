@@ -77,8 +77,4 @@ vim.keymap.set('n','<leader>e', vim.diagnostic.open_float, {
 })
 
 -- Terminal
-
---[[
--- Used the next command to leave the terminal mode using escape
--- :tnoremap <Esc> <C-\><C-n> 
---]]
+keymap('t','<Esc>','<C-\\><C-n>', {desc = "Exit Terminal mode using Escape"})

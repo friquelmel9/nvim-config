@@ -36,7 +36,7 @@ vim.keymap.set('n', '-', function() -- From the Neotree repository
       reveal_file = reveal_file, -- path to file or folder to reveal
       reveal_force_cwd = true,   -- change cwd without asking if needed
     }) end,
-    { desc = "Open neo-tree at current file or working directory" }
+   { desc = "Open neo-tree at current file or working directory" }
 )
 
 -- Keymaps Neogit
@@ -55,6 +55,11 @@ keymap('n','<leader>tn',':tabnew<CR>', {desc = "Create New Tab"})
 keymap('n','<leader>tx',':tabclose<CR>', {desc = "Close Tab"})
 keymap('n','<leader>tl',':tabnext<CR>', {desc = "Next Tab"})
 keymap('n','<leader>th',':tabprev<CR>', {desc = "Prev Tab"})
+
+-- Highlights management
+keymap('n','<Esc>','<CMD>nohlsearch<CR>', {desc = "Clear highlight",
+	silent = true
+})
 
 -- Quality of Life
 keymap('n','k',"v:count == 0 ? 'gk' : 'k'", { desc = "Visual Movement in Normal Mode for k",

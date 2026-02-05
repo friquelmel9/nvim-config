@@ -37,4 +37,3 @@ The Mason plugin is used for LSP (Language Server Protocol). In theory the LSP i
 - Mason and LSP configurations in REPO
 - AI implementation (Like Claude)
 - config.lua
-- terminal keybinding bug (See maps.lua)

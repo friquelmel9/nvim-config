@@ -35,5 +35,7 @@ The Mason plugin is used for LSP (Language Server Protocol). In theory the LSP i
 ## TODO
 
 - Mason and LSP configurations in REPO
+    - ~~lsp ensure installed~~
+    - Separate ensure installed with explanation of each lsp, formatter, etc.
 - AI implementation (Like Claude)
 - config.lua

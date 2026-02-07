@@ -14,6 +14,7 @@ return{
 			"ltex-ls", "ltex-ls-plus", -- Latex
 			"html-lsp", -- html
 			"prettier", -- misc
+			"tinymist", -- typst
 		},
 	},
 	dependencies = {

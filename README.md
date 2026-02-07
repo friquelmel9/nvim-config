@@ -40,4 +40,4 @@ The Mason plugin is used for LSP (Language Server Protocol). In theory the LSP i
 - AI implementation (Claude)
 - Window Manager plugin
 - Utility for lua/config/config.lua
-
+- Tab Manager

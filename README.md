@@ -31,13 +31,3 @@ The structure is modular. That means that each .lua file has a function. In ´in
 #### Mason and LSP
 
 The Mason plugin is used for LSP (Language Server Protocol). In theory the LSP installed are in lazy-lock.json. Need to see later.
-
-## TODO
-
-- Mason and LSP configurations in REPO
-    - ~~lsp ensure installed~~
-    - Separate ensure installed with explanation of each lsp, formatter, etc.
-- AI implementation (Claude)
-- Window Manager plugin
-- Utility for lua/config/config.lua
-- Tab Manager

@@ -42,6 +42,10 @@ vim.keymap.set('n', '-', function() -- From the Neotree repository
 -- Keymaps Neogit
 keymap('n','<leader>git','<CMD>Neogit<CR>', {desc = "Open Neogit UI" }) -- From Neogit repository
 
+-- Keymap LSP
+keymap('n','K',vim.lsp.buf.hover, { desc = "Open Hover info (LSP)" })
+keymap('n','<C-k>',vim.lsp.buf.signature_help, { desc = "Open Parameter info for functions (LSP)"})
+
 -- Window Management
 keymap('n','<leader>o','<CMD>vsplit<CR>', {desc = "Split the window (vertical)"})
 keymap('n','<leader>p','<CMD>split<CR>', {desc = "Split the window (horizontal)"})
